@@ -1,0 +1,52 @@
+//mixin de fonte
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url("../font/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular-Bolder';
+    src: url("../font/Montserrat-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url("../font/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url("../font/Montserrat-Thin.otf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url("../font/Montserrat-Light.otf");
+}
+
+@mixin font($size: initial, $color: #fff, $type: regular, $int: 400){
+    color: $color;
+    font: {
+        size: $size;
+        weight: $int;
+        @if $type == 'regular' {
+            family: 'Montserrat-Regular';
+        } @else if $type == 'bold'{
+            family: 'Montserrat-Regular-Bolder';
+        } @else if $type == 'semi-bold'{
+            family: 'Montserrat-SemiBold';
+        }  @else if $type == 'thin'{
+            family: 'Montserrat-Thin';
+        } @else if $type == 'light'{
+            family: 'Montserrat-Light';
+        }
+    }
+}
+
+//mixin de imagem
+@mixin img($url, $size: cover, $pos: center, $repeat: no-repeat) {
+    background-image: url(#{$url});
+    background-size: $size;
+    background-position: $pos;
+    background-repeat: $repeat;
+}

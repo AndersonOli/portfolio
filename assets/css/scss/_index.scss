@@ -1,0 +1,207 @@
+* {
+    transition: all 0.3s;
+    font-family: 'Major Mono Display', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+font-family: 'Cutive Mono', monospace;
+*/
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 0 60px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include device(xs){
+        padding: 0px;
+    }
+
+    @include device(sm){
+        padding: 0px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 80%;
+
+        @include device(xs){
+            display: none;
+        }
+    
+        @include device(sm){
+            display: none;
+        }
+    }
+}
+
+.navbar-top {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+
+        li {
+            flex: 1;
+            padding: 10px;
+            margin: 0 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            &:hover {
+                color: #fff;
+                background-color: #000;
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include device(xs){
+        flex-direction: column;
+        height: calc(100vh - 150px);
+    }
+
+    @include device(sm){
+        flex-direction: column;
+        height: calc(100vh - 100px);
+    }
+
+    .photo {
+        width: 30%;
+        height: 100%;
+        border: 4px solid #000;
+        display: flex;
+
+        @include device(md){
+            width: 40%;
+        }
+
+        @include device(xs){
+            width: 80%;
+            height: 60%;
+        }
+    
+        @include device(sm){
+            width: 80%;
+            height: 60%;
+        }
+
+        .box-adjust {
+            width: 100%;
+            align-self: flex-end;
+
+            button {
+                background-color: #000;
+                border: none;
+                outline: none;
+                padding: 10px 15px;
+                color: #fff;
+                float: right;
+                margin-right: -50px;
+                margin-bottom: 40px;
+                cursor: pointer;
+
+                @include device(xs){
+                    margin-right: -20px;
+                }
+            
+                @include device(sm){
+                    margin-right: -20px;
+                }
+            }
+        }
+    }
+}
+
+.little-about {
+    height: 100%;
+    overflow: hidden;
+    margin-left: 40px;
+    letter-spacing: 2px;
+
+    @include device(xs){
+        margin-left: 0px;
+        height: auto;
+    }
+
+    @include device(sm){
+        margin-left: 0px;
+        height: auto;
+    }
+
+    .greetings {
+        font-size: 1.375rem;
+
+        @include device(md){
+            display: block;
+        }
+
+        @include device(xs){
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        @include device(sm){
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    h1 {
+        display: inline-block;
+        margin-top: 25px;
+        font-size: 2.625rem;
+
+        @include device(xs){
+            font-size: 28px;
+        }
+    
+        @include device(sm){
+            font-size: 28px;
+        }
+        
+        &::after {
+            display: block;
+            text-align: right;
+            content: 'Oliveira';
+            margin-left: 300px;
+            font-size: 2.25rem;
+            margin-top: 10px;
+
+            @include device(md){
+                margin-left: 100px;
+            }
+
+            @include device(xs){
+                font-size: 28px;
+                margin-left: 100px;
+            }
+        
+            @include device(sm){
+                font-size: 28px;
+                margin-left: 100px;
+            }
+        }
+    }
+}

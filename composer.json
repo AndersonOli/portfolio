@@ -1,0 +1,21 @@
+{
+    "name": "kinda",
+    "description": "",
+    "license": "MIT",
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "require": {
+        "coffeecode/router": "^1.0",
+        "league/plates": "3.*",
+      "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    }
+}
