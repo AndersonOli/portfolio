@@ -1,5 +1,5 @@
 * {
-    transition: all 0.3s;
+    transition: width 0.3s;
     font-family: 'Major Mono Display', monospace;
 }
 
@@ -9,6 +9,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 font-family: 'Cutive Mono', monospace;
 */
+
+.header > * {
+    transition: all 0.3s;
+}
 
 .header {
     width: 100%;
@@ -52,9 +56,10 @@ font-family: 'Cutive Mono', monospace;
             margin: 0 20px;
             cursor: pointer;
             text-transform: uppercase;
+            transition: all 0.4s;
 
             &:hover {
-                color: #fff;
+                color: #fff;    
                 background-color: #000;
             }
         }
@@ -202,6 +207,44 @@ font-family: 'Cutive Mono', monospace;
                 font-size: 28px;
                 margin-left: 100px;
             }
+        }
+    }
+}
+
+//about
+
+.active {
+    color: #fff;
+    background-color: #000;
+}
+
+.about {
+    display: none;
+    width: 80%;
+    height: calc(100vh - 70px);
+    margin: 0 auto;
+
+    @include device(xs){
+        width: 100%;
+    }
+
+    @include device(sm){
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+
+        @include device(xs){
+            width: 80%;
+        }
+    
+        @include device(sm){
+            width: 80%;
         }
     }
 }
