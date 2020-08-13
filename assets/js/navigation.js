@@ -37,4 +37,32 @@ $(document).ready(function () {
                 break;
         }
     });
+
+    //open and close alert
+    $("#open-alert").click(function(){
+        $(".alert").css({"display":"flex"});
+        $(".overlay").css({"display":"block"});
+    });
+
+    $("#close-alert").click(function(){
+        $(".alert").css({"display":"none"});
+        $(".overlay").css({"display":"none"});
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// and erase

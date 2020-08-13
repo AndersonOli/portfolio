@@ -6,6 +6,7 @@
         <title>Anderson Oliveira</title>
         <link rel="stylesheet" href="assets/css/estilo.css"/>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/a062f3a0fc.js"></script>
         <script src="assets/js/navigation.js"></script>
     </head>
     <body>
@@ -22,14 +23,37 @@
             </nav>
         </header>
 
+        <!-- contact alert -->
+        <span class="alert">
+            <button id="close-alert">
+                <i class="far fa-times-circle"></i>
+            </button>
+
+            <div>
+                <span class="icon-alert">
+                    <i class="fab fa-whatsapp"></i>
+                </span>
+                <h4>86 9958-0740</h4>
+            </div>
+
+            <div>
+                <span class="icon-alert">
+                    <i class="far fa-envelope"></i>
+                </span>
+                <h4 class="mobile-mail">contactandersonoliveira<span class="break-line"></span>@gmail.com</h4>
+            </div>
+        </span>
+
+        <span class="overlay"></span>
+
         <main class="main">
             <div class="content">
                 <div class="photo">
                     <span class="box-adjust">
-                        <button>Contate-me</button>
+                        <button id="open-alert">Contate-me</button>
                     </span>
                 </div>
-                
+
                 <div class="little-about">
                     <h1><span class="greetings">Olá, eu sou </span>Anderson</h1>
                 </div>
