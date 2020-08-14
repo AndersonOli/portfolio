@@ -50,7 +50,7 @@
             <div class="content">
                 <div class="photo">
                     <span class="box-adjust">
-                        <button id="open-alert">Contate-me</button>
+                        <button class="open-alert">Contate-me</button>
                     </span>
                 </div>
 
@@ -59,16 +59,35 @@
                 </div>
             </div>
 
+            <div class="blog">
+                <div class="content-post">
+                    <div class="post">
+                        <div class="post-image"></div>
+                        <h2>Title of the post</h2>
+                        <p>
+                            Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum
+                            ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum
+                        </p>
+                    </div>
+
+                    <div class="post">
+                        <div class="post-image"></div>
+                        <h2>Title of the post</h2>
+                        <p>
+                            Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum
+                            ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="about">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga minus facere veritatis aspernatur modi facilis,
-                    at beatae optio est nisi maxime, nam consequuntur libero error?
-                    Earum rerum laboriosam ducimus atque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga minus facere veritatis aspernatur modi facilis,
-                    at beatae optio est nisi maxime, nam consequuntur libero error?
-                    Earum rerum laboriosam ducimus atque.
+                    Olá, sou Anderson Oliveira, programador e estudante de Enegenharia de Software.
+                    Formado em Eletrônica pelo Instituto Federal do Piauí, autodidata em programação desde os 12/13 anos de idade,
+                    sempre tive interesse em qualquer coisa que fosse diferente e muito gosto de aprender, aprender coisas novas e vivenciar tais.
+                    Nas horas vagas faço 'freelas' na área WEB e estou começando a escrever artigos no <a target="_blank" href="https://medium.com/@andersonoli">Medium</a>.
+                    <span class="open-alert">Contate-me</span>
                 </p>
             </div>
         </main>

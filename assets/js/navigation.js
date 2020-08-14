@@ -20,15 +20,23 @@ $(document).ready(function () {
         switch ($(this).data("navigation")) {
             case 'home':
                 //show home
-                $(".about").fadeOut("fast", () => {
+                $(".about, .blog").fadeOut("fast", () => {
                     $(".content").fadeIn();
                 });
                 active = 0;
                 break;
 
+            case 'blog':
+                //show about
+                $(".content, .about").fadeOut("fast", () => {
+                    $(".blog").fadeIn();
+                });
+                active = 1;
+                break;
+
             case 'about':
                 //show about
-                $(".content").fadeOut("fast", () => {
+                $(".content, .blog").fadeOut("fast", () => {
                     $(".about").fadeIn();
                 });
                 active = 2;
@@ -39,7 +47,7 @@ $(document).ready(function () {
     });
 
     //open and close alert
-    $("#open-alert").click(function(){
+    $(".open-alert").click(function(){
         $(".alert").css({"display":"flex"});
         $(".overlay").css({"display":"block"});
     });
