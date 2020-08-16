@@ -56,6 +56,14 @@ $(document).ready(function () {
         $(".alert").css({"display":"none"});
         $(".overlay").css({"display":"none"});
     });
+
+    $("#close-reader").click(function (){
+        $(".reader-area").fadeOut();
+    });
+
+    $(".open-post").click(function (){
+        $(".reader-area").fadeIn();
+    });
 });
 
 
